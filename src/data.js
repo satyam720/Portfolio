@@ -12,22 +12,22 @@ export const Projects = [
     },
     {
       id: 2,
-      title: "ClothingZen",
+      title: "ClothZen",
       img: vector2    ,
-      link: "https://github.com/satyam720/Zariya",
+      link: "https://github.com/satyam720/ClothZen",
     },
     {
       id: 3,
       title: "Wallpaper App",
       img:vector3,
-      link: "https://github.com/satyam720/Zariya",
+      link: "https://github.com/satyam720/wallpaper-app",
         
     },
     {
       id: 4,
       title: "Keeper",
       img:vector4,
-      link: "https://github.com/satyam720/Zariya",
+      link: "https://github.com/satyam720/KeeperApp",
         
     },
     

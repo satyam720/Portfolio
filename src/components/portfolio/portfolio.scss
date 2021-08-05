@@ -9,7 +9,7 @@
 
   h1 {
     font-size: 50px;
-
+    margin-bottom: 40px;
     @include mobile{
       font-size: 20px;
     }
@@ -35,7 +35,8 @@
       height: 200px;
       border-radius: 12px;
       border: 1px solid rgb(240, 239, 239);
-      margin: 30px 50px;
+      margin: 2px 60px;
+      
       display: flex;
       align-items: center;
       justify-content: center;
@@ -51,6 +52,15 @@
           z-index: 0;
         }
       }
+    }
+
+    .code-edit{
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      margin-bottom: 50px;
+    }
+      
 
       @include mobile{
         width: 130px;
@@ -70,7 +80,7 @@
       }
 
       
-      }
+      
     }
   }
 }

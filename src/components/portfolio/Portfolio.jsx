@@ -33,7 +33,7 @@ export default function Portfolio() {
             <h3>{d.title}</h3>
             </div>
             
-            <a href={d.link} >Code</a>
+            <a className="code-edit" href={d.link} >Code</a>
           </div>
         ))}
       </div>
