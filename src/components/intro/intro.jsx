@@ -1,6 +1,8 @@
 import './intro.scss';
 import { init } from 'ityped';
 import {useEffect, useRef } from 'react';
+import vector from '../../assets/dp.png';
+import down from '../../assets/down.png'
 
 export default function Intro() {
     const textRef = useRef();
@@ -11,7 +13,7 @@ export default function Intro() {
               backDelay: 1500,
               backSpeed: 60,
 
-             strings: ['Developer', 'Designer' , 'Content Creator']
+             strings: ['Developer', 'Designer' ]
              });
     },[])
 
@@ -20,7 +22,7 @@ export default function Intro() {
         <div className="intro" id='intro'>
            <div className="left">
                <div className='imgContainer'>
-                   <img src="assets/dp.png" alt="avatar"></img>
+                   <img src={vector} alt="avatar"></img>
                </div>
            </div>
            <div className="right">
@@ -31,7 +33,7 @@ export default function Intro() {
                     ref={textRef}></span></h3>
                </div>
                <a href="#portfolio">
-                   <img src="assets/down.png" alt="down"></img>
+                   <img src={down} alt="down"></img>
                </a>
            </div>
         </div>

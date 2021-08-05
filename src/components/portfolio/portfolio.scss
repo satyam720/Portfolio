@@ -15,18 +15,7 @@
     }
   }
 
-  ul {
-    margin: 10px;
-    padding: 0;
-    list-style: none;
-    display: flex;
-
-    @include mobile{
-      margin: 10px 0;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
+ 
 
   .container {
     width: 70%;
@@ -40,11 +29,13 @@
     }
 
     .item {
-      width: 220px;
-      height: 150px;
-      border-radius: 20px;
+
+      .image-item{
+      width: 400px;
+      height: 200px;
+      border-radius: 12px;
       border: 1px solid rgb(240, 239, 239);
-      margin: 10px 20px;
+      margin: 30px 50px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -52,6 +43,14 @@
       position: relative;
       transition: all .5s ease;
       cursor: pointer;
+
+      &:hover {
+        background-color: $mainColor;
+        img {
+          opacity: 0.2;
+          z-index: 0;
+        }
+      }
 
       @include mobile{
         width: 130px;
@@ -70,12 +69,7 @@
         z-index: 1;
       }
 
-      &:hover {
-        background-color: $mainColor;
-        img {
-          opacity: 0.2;
-          z-index: 0;
-        }
+      
       }
     }
   }
