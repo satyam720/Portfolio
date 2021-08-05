@@ -2,6 +2,11 @@
 
 import { useState } from "react";
 import "./work.scss";
+import arrow from '../../assets/arrow.png';
+import vector1 from '../../assets/zariya.png';
+import vector2 from '../../assets/clothingZen.png';
+import vector3 from '../../assets/wallpaper.png';
+import vector4 from '../../assets/keeper.png'
 
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -9,11 +14,11 @@ export default function Works() {
     {
       id: "1",
       icon: "./assets/mobile.png",
-      title: "Web Design",
+      title: "Zariya",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      img:
-        "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+        "Zariya is A udemy clone app ",
+      img: vector1
+        ,
     },
     {
       id: "2",
@@ -22,7 +27,7 @@ export default function Works() {
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+        vector2,
     },
     {
       id: "3",
@@ -31,7 +36,7 @@ export default function Works() {
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+        vector3,
     },
   ];
 
@@ -62,7 +67,7 @@ export default function Works() {
               </div>
               <div className="right">
                 <img
-                  src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
+                  src={d.img}
                   alt=""
                 />
               </div>
@@ -71,13 +76,13 @@ export default function Works() {
         ))}
       </div>
       <img
-        src="assets/arrow.png"
+        src={arrow}
         className="arrow left"
         alt=""
         onClick={() => handleClick("left")}
       />
       <img
-        src="assets/arrow.png"
+        src={arrow}
         className="arrow right"
         alt=""
         onClick={() => handleClick()}
